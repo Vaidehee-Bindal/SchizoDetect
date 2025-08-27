@@ -29,26 +29,37 @@ Processed Dataset: 12,096 spectrogram images (144 per subject).
 METHODOLOGY
 
 1. Signal Preprocessing
+   
    Applied 2nd-order Butterworth bandpass filter (2–45 Hz).
    Removed muscle noise,eye blinks (<2 Hz) & high-frequency artifacts (>45 Hz).
    Preserved physiological EEG rhythms: theta, alpha, beta, gamma, delta.
    Cleaned 1D EEG signals were transformed using Fast Continuous Wavelet Transform (FCWT) obtained from GitHub for faster computation chosen over traditional CWT.
+   
 2. Image Encoding
+ 
    FCWT spectrograms converted each filtered EEG signal into 2D RGB images.
    Each subject contributed 144 images (16 channels × 9 segments due to sliding window of 20 sec with 15 sec overlap), totalling 12,096 spectral images.
+   
 3. Feature Engineering (Deep Feature Extraction)
+
    Used pretrained CNNs: EfficientNet-B3 and DenseNet-169 via transfer learning.
    Each FCWT image was passed through both networks to extract high-level spatial-frequency features.
    Resulting vectors were concatenated giving a 3200-dimensional hybrid feature descriptor.
+   
 4. Feature Engineering (Feature Selection)
+]
    Genetic Algorithm (GA) optimized features.
    Reduced redundancy & noise.
+
 5. Classification
+]
    Training/Test Split -
    Stratified ~80/20 split at subject level to avoid data leakage.
    Training: 9,360 images (4,464 HC & 4,896 SZ → 31 HC / 34 SZ subjects).
    Testing: 2,736 images (1152 HC & 1,584 SZ → 8 HC / 11 SZ subjects).
+
 6. Models
+
    Applied KNN, RandomForest, XGBoost and received better results in XGBoost algorithm.
 
 RESULTS
