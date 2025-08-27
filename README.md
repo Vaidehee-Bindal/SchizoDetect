@@ -1,12 +1,12 @@
 # EEG-Based Schizophrenia Detection Using Image Encoding and Genetic Algorithm Machine Learning Models
 
-OVERVIEW 
+**OVERVIEW** 
 
 Schizophrenia is a chronic and severe mental disorder that affects how a person thinks, feels, and behaves. It often leads to hallucinations, delusions, disorganized speech, and cognitive difficulties. According to the WHO, schizophrenia affects approximately 24 million people worldwide, and early diagnosis plays a crucial role in effective treatment and improving quality of life.
 Traditionally, diagnosis relies on clinical interviews, behavioral assessments, and neuropsychological tests, which can sometimes be subjective and time-consuming. With advancements in Artificial Intelligence (AI) and Machine Learning (ML), analyzing EEG (Electroencephalogram) signals offers an objective and non-invasive approach to support clinicians in early detection.
 This project explores the use of EEG signals, image encoding techniques, and machine learning models to build an automated system that can distinguish between healthy individuals and schizophrenia patients.
 
-PROJECT GOAL
+**PROJECT GOAL**
 
 The main goal of this project is to build a machine learning pipeline that:
 -> Processes raw EEG signals.
@@ -16,7 +16,7 @@ The main goal of this project is to build a machine learning pipeline that:
 -> Classifies patients vs. healthy individuals using ML classifiers.
 This contributes to the development of AI-driven clinical decision support systems for early, reliable, and cost-effective schizophrenia detection.
 
-DATASET DESCRIPTION
+**DATASET DESCRIPTION**
 
 Subjects: 84 total → 39 Healthy Controls (HC), 45 Schizophrenic Patients (SZ).
 EEG Recording:
@@ -26,7 +26,7 @@ EEG Recording:
 Data Size: 7680 samples per electrode per subject.
 Processed Dataset: 12,096 spectrogram images (144 per subject).
 
-METHODOLOGY
+**METHODOLOGY**
 
 1. Signal Preprocessing
    
@@ -62,14 +62,14 @@ METHODOLOGY
 
    Applied KNN, RandomForest, XGBoost and received better results in XGBoost algorithm.
 
-RESULTS
+**RESULTS**
 
 Implemented a pipeline combining EEG → Image Encoding (FCWT) → CNN Feature Extraction → GA Optimization → ML Classification Models.
 The system was able to differentiate between schizophrenia patients and healthy controls, but the results were not highly accurate due to dataset limitations and model overfitting.
 The project primarily demonstrates the feasibility and workflow for EEG-based schizophrenia detection using ML/DL techniques.
 More advanced classifiers, larger datasets, and regularization techniques are required to improve performance.
 
-CONTRIBUTIONS
+**CONTRIBUTIONS**
 
 Contributions are welcome! 
 If you’d like to improve this project or add new features, feel free to fork the repository and submit a pull request.
