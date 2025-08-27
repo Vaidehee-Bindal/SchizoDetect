@@ -1,6 +1,7 @@
 # EEG-Based Schizophrenia Detection Using Image Encoding and Genetic Algorithm Machine Learning Models
 
 OVERVIEW 
+
 Schizophrenia is a chronic and severe mental disorder that affects how a person thinks, feels, and behaves. It often leads to hallucinations, delusions, disorganized speech, and cognitive difficulties. According to the WHO, schizophrenia affects approximately 24 million people worldwide, and early diagnosis plays a crucial role in effective treatment and improving quality of life.
 Traditionally, diagnosis relies on clinical interviews, behavioral assessments, and neuropsychological tests, which can sometimes be subjective and time-consuming. With advancements in Artificial Intelligence (AI) and Machine Learning (ML), analyzing EEG (Electroencephalogram) signals offers an objective and non-invasive approach to support clinicians in early detection.
 This project explores the use of EEG signals, image encoding techniques, and machine learning models to build an automated system that can distinguish between healthy individuals and schizophrenia patients.
