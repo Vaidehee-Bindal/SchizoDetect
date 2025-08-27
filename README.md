@@ -47,12 +47,12 @@ METHODOLOGY
    Resulting vectors were concatenated giving a 3200-dimensional hybrid feature descriptor.
    
 4. Feature Engineering (Feature Selection)
-]
+
    Genetic Algorithm (GA) optimized features.
    Reduced redundancy & noise.
 
 5. Classification
-]
+
    Training/Test Split -
    Stratified ~80/20 split at subject level to avoid data leakage.
    Training: 9,360 images (4,464 HC & 4,896 SZ → 31 HC / 34 SZ subjects).
